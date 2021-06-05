@@ -9,7 +9,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import javax.swing.*;
 import java.util.concurrent.TimeUnit;
 
 public class tc001 {
@@ -57,10 +56,10 @@ WebDriver driver;
     String expTitle = "Dashboard";
     Assert.assertEquals(driver.getTitle(), expTitle, "Title does not match - Login not successful");
 
-    WebElement fleetModuleTab = driver.findElement(By.xpath("//span[@class='title title-level-1'][1]"));
     Actions action = new Actions(driver);
+    WebElement fleetModuleTab = driver.findElement(By.xpath("//span[@class='title title-level-1'][1]"));
     action.moveToElement(fleetModuleTab).perform();
-    //fleetModuleTab.click();
+
     WebElement vehiclesTab = driver.findElement(By.xpath("//a[@href='entity/Extend_Entity_Carreservation']"));
     action.moveToElement(vehiclesTab).perform();
     vehiclesTab.click();
@@ -69,10 +68,6 @@ WebDriver driver;
 
     String expAllVehiclesTitle = "Car - Entities - System - Car - Entities - System";
     Assert.assertEquals(driver.getTitle(), expAllVehiclesTitle, "Title does not match - Vehicles page not accessed");
-
-
-
-
 
 }
 
