@@ -1,0 +1,242 @@
+June 7th Assignment
+
+User Story 1:
+As a truck driver, I should be able to access Vehicle under the Fleet module.
+
+Acceptance Criteria:
+1.Verify that truck driver should be able to see all Vehicle information once navigate to Vehicle page. 
+	Given that I am logged into Vytrack
+	When I click on Fleet Module tab
+	and click on Vehicle
+	Then I should be able to view all Vehicle information
+
+2.Verify that when user click on any car on the grid , system should display general information about the car 
+	Given that I am on the vehicle page
+	When I click on any car in the grid
+	Then I should be able to see that car's information
+
+3.Verify that truck driver can add Event and it should display under Activity tab and General information page as well.
+	Given that I have clicked on Activites tab
+	and clicked on Calendar Events
+	When I click on Create Calendar Event
+	Then I should be able to add an event
+
+4.Verify that Truck driver can reset the setting
+	*Don't know what setting this is referring to*
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+User Story 2:
+As a Store Manager and Sales Manager, I should be able to create a vehicle.
+
+Acceptance Criteria:
+1. Verify that Store Manager or Sales Manager should be able to see all vehicle information once they navigate to Vehicle page
+	Given that I am logged into Vytrack
+	When I click on Fleet Module tab
+	and click on Vehicle
+	Then I should be able to view all Vehicle information
+
+2. Verify that Store Manager or Sales Manager should be able to create and cancel a car	
+	Given that I have clicked on Fleet
+	and I have clicked on Vehicles
+	When I click on Create a Car button
+	Then I should be able to create a car or cancel 
+
+3. Verify that Store Manager or Sales Manager should be able to add vehicle model and vehicle make
+	Given that I am adding a new car
+	When I input vehicle model and vehicle make
+	Then I should be able to click Save and Close to add a car
+
+4. Verify that Store Manager or Sales Manager should be able to edit or delete a vehicle
+	Given that I am viewing all cars
+	When I click on any car in the grid
+	Then I should be able to edit or delete said vehicle
+
+5. Verify that Store Manager or Sales Manager should be able to add event
+	Given I am viewing a car from the car grid
+	When I click to Add Event
+	Then I should be able to add an event for said car
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+User Story 3:
+As a Truck Driver, I should be able to access the Vehicle Odometer page.
+
+Acceptance Criteria:
+1.Verify that only the Truck Driver can access the vehicle odometer page (Note: Non authorized users : Store manager, Sales manager)
+	Given that I am logged in as a Truck Driver
+	When I click Fleet Module
+	and click Vehicle Odometer
+	Then I should be able to view the Vehicle Odometer page
+
+2.Verify that Truck Driver should be able to see all vehicle odometer informations on the grid. 
+	Given that I am logged in as a Truck Driver
+	When I am on the Vehicle Odometer page
+	Then I should be able to see all the vehicle odometer information on the grid
+
+3.Verify that Truck Driver should be able to create Vehicle odometer or cancel it. 
+	Given that I am on the Vehicle Odometer page
+	When I click to Create Vehicle Odometer
+	Then I should be able to create a new vehicle odometer or cancel
+
+4.Verify that Truck Driver should be able to delete or edit Vehicle odometer.
+	Given that I am on the Vehicle Odometer page
+	When I click on any vehicle odometer in the grid
+	Then I should be able to delete or edit said vehicle odometer
+
+5.Verify that Truck Driver should be able to reset grid by clicking on grid setting.
+	Given that I am on the Vehicle Odometer page
+	When I click the reset button on the right side of the page
+	Then the grid should have reset
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+User Story 5:
+As a Truck Driver, I should be able to access the Vehicle Costs page.
+
+Acceptance Criteria:
+1.Verify that truck driver should be able to see all cars' cost informations on the Vehicle Costs page. 
+	Given that I am logged in as Truck Driver
+	When I navigate to the Vehicle Costs page
+	Then I should be able to view all the cars' cost information
+
+2.Verify that truck driver should be able to create Vehicle cost an cancel it.
+	Given that I am logged in as Truck Driver
+	and I have navigated to the Vehicle Costs page
+	When i click to Create Vehicles Cost
+	Then I should be able to click cancel
+
+3.Verify that truck driver should be able to edit or delete Vehicle cost
+	Given that I am logged in as Truck Driver
+	and I have navigated to the Vehicle Costs page
+	When I click to a specific cost
+	Then I should be able to edit or delete said cost
+
+4.Verify that truck driver should be able to add Attachement on General information page by click on any of the car on the grid.
+	*Not related to Vehicle Costs page
+
+5.Verify that truck driver should be able to reset the grid by click on Grid setting
+	Given that I am on the Vehicle Odometer page
+	When I click the reset button on the right side of the page
+	Then the grid should have reset
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+User Story 6:
+As a Store Manager or Sales Manager, I should be able to access the Vehicle Costs page.
+
+Acceptance Criteria:
+1.Verfiy that store manager or Sales manager should be able to see all car's cost inforamtions on on the Vehicle Costs page.
+2.Verify that Store manager or sales manager should be able to create Vehicle cost or cancel it.
+3.Verify that store manager or sales manager should be able to delete or edit the costs.
+4.Verify that store manager or sales manager should be able to do More actions. (Add attachement, Add note, Add event )
+5.Verify that store manager or sales manager should be able to reset the grid by click on Grit setting.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+User Story 7:
+As an authorized user, I should be able to access the Vehicle Contract page.
+
+Acceptance Criteria:
+1.Verify that Only authorized user should be able to access Vehicle Contract. (Note: authorized users: store manager, sales manager)
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+User Story 8:
+As an authorized user (Store Manager or Sales Manager), I should be able to access the Vehicle Contract.
+
+Acceptance Criteria:
+1.Verify that authorized user should be able to access Vehicle Contract and able to see all vehicle contracts on the grid.
+2.Verify that authorized user should be able to create Vehicle contract. 
+3.Verfiy that authorized user should be able to cancel Vehicle Contract.
+4.Verify that authorized user should be able to Edit or delete the Vehicle Contract.
+5.Verify that authorized user should be able to reset the grid by click on Grid setting.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+User Story 9:
+As an authorized user, I should be able to access the Vehicle Fuel Logs.
+
+Acceptance Criteria:
+1.Verify that only authorized user can access Vehicle Fuel logs. (Note: authorized user: truck driver)
+	Given that I am NOT logged in as Truck Driver
+	When I click to Vehicle Fuel Logs
+	Then I should not have access to the logs
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+User Story 10:
+As a Truck Driver, I should be able to access Vehicle Fuel Logs.
+
+Acceptance Criteria:
+
+1.Verify that truck driver should be able to see all Vehicle Fuel information on the grid 
+	Given that I am logged in as Truck Driver
+	When I click Fleet Module
+	and I click Vehicle Fuel Logs
+	Then I should be able to see all Vehicle Fuel Information on the grid
+
+2.Verify that truck driver should be able to create Vehicle Fuel logs or cancel it
+	Given that I am logged in as Truck Driver
+	and I have navigated to the Vehicle Fuel Logs
+	When I click Creat Vehicle Fuel Logs
+	Then I should be able to select Save and Close or select Cancel
+
+3.Verify that truck driver should be able to Edit, delete Vehicle Fuel Logs or add attachement, add event 
+	Given that I am logged in as Truck Driver
+	and I have navigated to the Vehicle Fuel Logs
+	When I have clicked on any vehicle
+	Then I should see: Edit, Delete, Add Attachment and Add Event on the right side of the page
+
+4.Verfiy that truck driver should be able to reset the grid by clicking on Grid setting"
+	Given that I am on the Vehicle Odometer page
+	When I click the reset button on the right side of the page
+	Then the grid should have reset
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+User Story 11:
+As a authorized user, I should be able to access the Vehicle Services Log.
+
+Acceptance Criteria:
+1.Verify that authorized user should be able to access and see all Vehicle serviece log (Note: authorized:Truck driver)
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+User Story 12:
+As a Truck Driver, I should be able to access the Vehicle Services Log.
+
+Acceptance Criteria:
+1.Verify that truck driver should be able to see all Vehilce service logs
+2.Verify that truck driver should be able to create Vehicle service logs or cancel it
+3.Verify that during the creation, the service type drop down should display (Road Assistance Depreciation and Interests,Tax Roll,Summer Tires,Snow Tires,Repair and Maintenance,Vehicle Insurance,Vehicle Delivery)
+4.Verify that truck driver should be able to Edit or delete Vehicle services log
+5.Verify that truck driver should be able to add event 
+6.Verify that truck driver should be able to reset grid by click on Grid setting
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+User Story 13:
+As an authorized user, I should be able to access the Vehicle Model page.
+
+Acceptance Criteria:
+1.Verify that only authorized user should be able to access Vehicle model page and see all Vehicle modules (Note: Store manager,sales manager )
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+User Story 14:
+As a Store Manager or Sales Manager, I should be able to access the Vehicle Model page.
+
+Acceptance Criteria:
+1.Verify that store manager or sales manager should be able to access Vehicle model page andable to see all Vehicles model information
+2. Verify that Store manager or Sales manager should be able to create new Vehicle model 
+3.Verify that during the creation, all required field should be displayed and Fuel type drop down should displayed as Gasoline,Diesel,Electric,Hybird
+4.Verfiy that store manager or sales manager should be able to Edit or delete the Vehicle model.
+5.Verify that store manager or sales manager should be able to reset the grid by click on Grid setting.
+
+
+
+
