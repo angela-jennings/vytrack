@@ -4,10 +4,12 @@ import Utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import javax.swing.*;
 import java.util.concurrent.TimeUnit;
 
 public class tc001 {
@@ -56,9 +58,11 @@ WebDriver driver;
     Assert.assertEquals(driver.getTitle(), expTitle, "Title does not match - Login not successful");
 
     WebElement fleetModuleTab = driver.findElement(By.xpath("//span[@class='title title-level-1'][1]"));
-    fleetModuleTab.click();
-    fleetModuleTab.click();
+    Actions action = new Actions(driver);
+    action.moveToElement(fleetModuleTab).perform();
+    //fleetModuleTab.click();
     WebElement vehiclesTab = driver.findElement(By.xpath("//a[@href='entity/Extend_Entity_Carreservation']"));
+    action.moveToElement(vehiclesTab).perform();
     vehiclesTab.click();
 
     Thread.sleep(5000);
