@@ -46,8 +46,10 @@ WebDriver driver;
 
     WebElement usernameField = driver.findElement(By.xpath("//input[@name='_username']"));
     usernameField.sendKeys("user4");
+
     WebElement passwordField = driver.findElement(By.xpath("//input[@name='_password']"));
     passwordField.sendKeys("UserUser123");
+
     WebElement submitButton = driver.findElement(By.xpath("//button[@type='submit']"));
     submitButton.click();
 
