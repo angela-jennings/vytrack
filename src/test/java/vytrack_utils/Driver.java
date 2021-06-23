@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class Driver {
     private Driver(){}
     /*
-    Making our driver instance private so that it is not reachable from outside of the class. We make it sttatic because we want it to run before everything else and also we will use it in a static method
+    Making our driver instance private so that it is not reachable from outside of the class. We make it static because we want it to run before everything else and also we will use it in a static method
      */
     private static WebDriver driver;
 
