@@ -8,10 +8,10 @@ public class VytrackUserMethods {
 
     public static void truckDriverLogin(){
         WebElement usernameField = Driver.getDriver().findElement(By.xpath("//input[@name='_username']"));
-        usernameField.sendKeys("user4");
+        usernameField.sendKeys(ConfigurationReader.getProperty("username"));
 
         WebElement passwordField = Driver.getDriver().findElement(By.xpath("//input[@name='_password']"));
-        passwordField.sendKeys("UserUser123");
+        passwordField.sendKeys(ConfigurationReader.getProperty("password"));
 
         WebElement submitButton = Driver.getDriver().findElement(By.xpath("//button[@type='submit']"));
         submitButton.click();

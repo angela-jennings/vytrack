@@ -23,6 +23,8 @@ public class ExportGridDropdown {
 
         WebElement xlsxLink = Driver.getDriver().findElement(By.xpath("//a[@title='XLSX']"));
         Assert.assertTrue(xlsxLink.isDisplayed());
+
+        Driver.getDriver().close();
     }
 
 }
