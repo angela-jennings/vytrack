@@ -1,6 +1,6 @@
-package vytrack_assignment_one;
+package vytrack_assignment1;
 
-import Utilities.WebDriverFactory;
+import vytrack_utils.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

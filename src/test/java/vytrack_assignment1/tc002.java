@@ -1,6 +1,6 @@
-package vytrack_assignment_one;
+package vytrack_assignment1;
 
-import Utilities.WebDriverFactory;
+import vytrack_utils.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +10,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 public class tc002 {
