@@ -1,6 +1,7 @@
 package vytrack_utils;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
@@ -44,6 +45,7 @@ public class VytrackUserMethods {
     }
 
     public static void clickFleetClickVehicles(){
+
         Actions actions = new Actions(Driver.getDriver());
         WebElement fleetModuleTab = Driver.getDriver().findElement(By.xpath("//span[@class='title title-level-1'][1]"));
         actions.moveToElement(fleetModuleTab).perform();
@@ -53,5 +55,7 @@ public class VytrackUserMethods {
         vehiclesTab.click();
 
         BrowserUtils.sleep(2);
+
+
     }
 }
