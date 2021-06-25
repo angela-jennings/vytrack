@@ -4,13 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import vytrack_utils.ConfigurationReader;
 import vytrack_utils.Driver;
 import vytrack_utils.VytrackUserMethods;
 
-public class tc007 {   //7.Verify That Grid Settings should be on the right side of the Reset button
+public class AC_7 {   //7.Verify That Grid Settings should be on the right side of the Reset button
     @BeforeClass
     public void setUp() {
         Driver.getDriver().get(ConfigurationReader.getProperty("env")); //going to our webpage, using configurations
@@ -27,15 +28,15 @@ public class tc007 {   //7.Verify That Grid Settings should be on the right side
         WebElement element = Driver.getDriver().findElement(By.xpath(xPath));
        if (element.isDisplayed()){
            isGridSettingsOnTheRightOfResetButton = true;
-       }else{
-           isGridSettingsOnTheRightOfResetButton = false;
        }
        Assert.assertTrue(isGridSettingsOnTheRightOfResetButton);
-
-
-
     }
 
+
+    @AfterClass
+    public void tearDown(){
+        Driver.closeDriver();
+    }
 
 }
 
