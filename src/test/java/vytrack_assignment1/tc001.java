@@ -72,6 +72,8 @@ WebDriver driver;
     Assert.assertEquals(driver.getTitle(), expAllVehiclesTitle, "Title does not match - Vehicles page not accessed");
 
     //Test
+
+    //PracticeTest
 }
 
 }
